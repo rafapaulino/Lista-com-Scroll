@@ -1,0 +1,24 @@
+{
+  "name": "lista-com-scroll",
+  "homepage": "https://github.com/rafapaulino/Lista-com-Scroll",
+  "description": "Dropdown com scroll",
+  "main": "",
+  "license": "MIT",
+  "keywords": [
+    "news"
+  ],
+  "authors": [
+    "Rafael Paulino"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "font-awesome": "fontawesome#4.7.0"
+  }
+}
