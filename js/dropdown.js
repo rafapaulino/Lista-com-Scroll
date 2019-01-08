@@ -52,6 +52,12 @@
             $menu.toggleClass('show');
         });
 
+        //pega o valor do elemento selecionado e coloca no botão para simular um campo select selected do html
+        if( $('.dropdown-item.selected a').length > 0 ) {
+            var $selected = $('.dropdown-item.selected a').text();
+            $('.dropdown-toggle > span').text($selected);
+        }
+
         return this;
  
     };
