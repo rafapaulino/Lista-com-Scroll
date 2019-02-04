@@ -27,6 +27,10 @@
     cursor: pointer;
     position: relative;
 }
+.dropdown-scrollable button.btn-dark {
+    background: #CCCCCC;
+    color: #FFF;
+}
 .dropdown-scrollable button i {
     font-size: 15px;
     position: absolute;

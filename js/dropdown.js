@@ -54,8 +54,12 @@
 
         //pega o valor do elemento selecionado e coloca no botão para simular um campo select selected do html
         if( $('.dropdown-item.selected a').length > 0 ) {
-            var $selected = $('.dropdown-item.selected a').text();
-            $('.dropdown-toggle > span').text($selected);
+            $('.dropdown-item.selected').each(function(){
+                var $this = $(this);
+                var $text = $this.find('a').text();
+                var $parent = $this.parent().parent().prev('.dropdown-toggle');
+                $parent.find('span').text($text);
+            });
         }
 
         return this;
